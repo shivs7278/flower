@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birth Flowers & Their Symbolism</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Discover Your Birth Flower</h1>
+        <p>Explore the flowers associated with each birth month and their meanings!</p>
+    </header>
+
+    <!-- Interactive Chart Section -->
+    <section id="birth-flower">
+        <h2>Find Your Birth Flower</h2>
+        <p>Select your birth month to discover your flower and its symbolism:</p>
+        <select id="monthSelect" onchange="showFlower()">
+            <option value="">Select Month</option>
+            <option value="1">January</option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+        </select>
+
+        <div id="flowerInfo" class="flower-info">
+            <img id="flowerImage" src="" alt="Flower Image" style="width: 400px; height: 400px; display: none;">
+            <h3 id="flowerName"></h3>
+            <p id="flowerMeaning"></p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Birth Flowers</h2>
+        <p>Each month is associated with a unique flower, each with its own symbolism. From strength and courage to peace and beauty, discover what your birth flower says about you!</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required></textarea><br><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Birth Flowers | All Rights Reserved</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
